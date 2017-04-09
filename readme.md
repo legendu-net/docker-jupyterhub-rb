@@ -1,6 +1,6 @@
-# dclong/jupyterlab-r
+# dclong/jupyterlab-rb
 
-Jupyter Notebook/Lab with the IRKernel (for R). 
+JupyterLab with IRKernel (for R). 
 
 ## About the Author
 
@@ -9,34 +9,34 @@ Jupyter Notebook/Lab with the IRKernel (for R).
 ## Usage 
 
 ```
-docker run -d -p 8888:8888 -p 8889:8889 \
+docker run -d -p 8888:8888 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
     -v $HOME:/jupyter \
-    dclong/jupyterlab-r
+    dclong/jupyterlab-rb
 ```
 ```
-docker run -d -p 8888:8888 -p 8889:8889 \
+docker run -d -p 8888:8888 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -v $HOME:/jupyter \
-    dclong/jupyterlab-r
+    dclong/jupyterlab-rb
 ```
 
 ```
-docker run -d -p 8888:8888 -p 8889:8889 \
+docker run -d -p 8888:8888 \
     -e DOCKER_USER=ubuntu \
     -e DOCKER_USER_ID=`id -u ubuntu` \
     -e DOCKER_PASSWORD=ubuntu \
     -v /home/ubuntu:/jupyter \
-    dclong/jupyterlab-r
+    dclong/jupyterlab-rb
 ```
 ```
-docker run -d -p 8888:8888 -p 8889:8889 \
+docker run -d -p 8888:8888 \
     -e DOCKER_USER=ubuntu \
     -e DOCKER_USER_ID=`id -u ubuntu` \
     -v /home/ubuntu:/jupyter \
-    dclong/jupyterlab-r
+    dclong/jupyterlab-rb
 ```
 
