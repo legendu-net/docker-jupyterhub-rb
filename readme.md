@@ -1,6 +1,6 @@
 # dclong/jupyterlab-rb
 
-JupyterLab with IRKernel (for R). 
+JupyterLab with R base. 
 
 ## About the Author
 
