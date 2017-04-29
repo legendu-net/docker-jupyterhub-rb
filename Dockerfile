@@ -1,6 +1,6 @@
 FROM dclong/jupyterlab
 
-Run apt-get update \
+RUN apt-get update \
     && apt-get -y --no-install-recommends install \
         r-base-dev \
         texlive texinfo \
