@@ -19,9 +19,7 @@ RUN apt-get update \
     && apt-get autoclean
 
 # install IRKernel
-ADD install_irkernel.r /
-RUN Rscript /install_irkernel.r \
-    && rm /install_irkernel.r 
+ADD scripts /scripts
+RUN Rscript /scripts/install_irkernel.r
 
-ADD script.sh /
 
