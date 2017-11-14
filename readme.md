@@ -1,4 +1,4 @@
-# dclong/jupyterlab-rb
+# [dclong/jupyterlab-rb](https://hub.docker.com/r/dclong/jupyterlab-rb/)
 
 JupyterLab with R base. 
 
