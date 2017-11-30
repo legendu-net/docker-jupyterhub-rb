@@ -9,7 +9,9 @@ JupyterLab with R base.
 ## Usage 
 
 ```
-docker run -d -p 8888:8888 \
+docker run -d \
+    --log-opt max-size=50m \
+    -p 8888:8888 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
@@ -17,7 +19,9 @@ docker run -d -p 8888:8888 \
     dclong/jupyterlab-rb
 ```
 ```
-docker run -d -p 8888:8888 \
+docker run -d \
+    --log-opt max-size=50m \
+    -p 8888:8888 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -v $HOME:/jupyter \
@@ -25,7 +29,9 @@ docker run -d -p 8888:8888 \
 ```
 
 ```
-docker run -d -p 8888:8888 \
+docker run -d \
+    --log-opt max-size=50m \
+    -p 8888:8888 \
     -e DOCKER_USER=ubuntu \
     -e DOCKER_USER_ID=`id -u ubuntu` \
     -e DOCKER_PASSWORD=ubuntu \
@@ -33,7 +39,9 @@ docker run -d -p 8888:8888 \
     dclong/jupyterlab-rb
 ```
 ```
-docker run -d -p 8888:8888 \
+docker run -d \
+    --log-opt max-size=50m \
+    -p 8888:8888 \
     -e DOCKER_USER=ubuntu \
     -e DOCKER_USER_ID=`id -u ubuntu` \
     -v /home/ubuntu:/jupyter \
