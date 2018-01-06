@@ -48,7 +48,7 @@ docker run -d \
     dclong/jupyterlab-rb
 ```
 
-## Derived Images Based [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)
+## Image Tree Related to [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)
 
 - [dclong/python](https://hub.docker.com/r/dclong/python/)
     - [dclong/dryscrape](https://hub.docker.com/r/dclong/dryscrape/)
