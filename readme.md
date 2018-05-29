@@ -1,6 +1,9 @@
 # [dclong/jupyterlab-rb](https://hub.docker.com/r/dclong/jupyterlab-rb/)
 
 JupyterLab with R base. 
+**It is recommended that you use the image
+[dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
+for data science related work.**
 
 ## About the Author
 
