@@ -10,7 +10,7 @@ ADD settings/Renviron.site /etc/R/Renviron.site
 
 # install R package dependencies
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         libxml2-dev \
         libcairo2-dev \
         libssl-dev \
