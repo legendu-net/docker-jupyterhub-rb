@@ -16,7 +16,7 @@ RUN apt-get update \
         libssl-dev \
         libcurl4-openssl-dev \
     && DEBIAN_FRONTEND=noninteractive apt-get autoremove \
-    && apt-get autoclean
+    && DEBIAN_FRONTEND=noninteractive apt-get autoclean
 
 # install IRKernel
 ADD scripts /scripts
