@@ -1,7 +1,7 @@
 FROM dclong/jupyterlab
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install \
+    && apt-get install -y --no-install-recommends \
         r-base-dev \
     && apt-get autoremove \
     && apt-get autoclean
@@ -10,7 +10,7 @@ ADD settings/Renviron.site /etc/R/Renviron.site
 
 # install R package dependencies
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install \
+    && apt-get install -y --no-install-recommends \
         libxml2-dev \
         libcairo2-dev \
         libssl-dev \
