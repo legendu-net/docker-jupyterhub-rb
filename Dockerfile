@@ -10,13 +10,13 @@ ADD settings/Renviron.site /etc/R/Renviron.site
 
 # install R package dependencies
 RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends \
         libxml2-dev \
         libcairo2-dev \
         libssl-dev \
         libcurl4-openssl-dev \
-    && DEBIAN_FRONTEND=noninteractive apt-get autoremove \
-    && DEBIAN_FRONTEND=noninteractive apt-get autoclean
+    && apt-get autoremove -y \
+    && apt-get autoclean -y
 
 # install IRKernel
 ADD scripts /scripts

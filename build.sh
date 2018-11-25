@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-docker build -t dclong/jupyterlab-rb .
+docker build . -t dclong/jupyterhub-rb
