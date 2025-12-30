@@ -1,7 +1,7 @@
 FROM dclong/jupyterhub
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+RUN apt-get -y update \
+    && apt-get -y install --no-install-recommends \
         r-base-dev \
     && apt-get autoremove \
     && apt-get autoclean
@@ -9,8 +9,8 @@ RUN apt-get update \
 ADD settings/Renviron.site /etc/R/Renviron.site
 
 # install R package dependencies
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+RUN apt-get -y update \
+    && apt-get -y install --no-install-recommends \
         libxml2-dev \
         libcairo2-dev \
         libssl-dev \
